@@ -6,11 +6,11 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class JavaIfElesTest extends BasicTest {
+    private static final int TEST_CASE = 2;
+
     @Test
     public void test() throws Exception {
-        int testCaseNumber = 2;
-
-        for (int i = 1; i <= testCaseNumber; i++) {
+        for (int i = 1; i <= TEST_CASE; i++) {
             System.err.println("Test Case " + i);
 
             String inputFile = String.format("input%d.txt", i);
@@ -32,6 +32,5 @@ public class JavaIfElesTest extends BasicTest {
 
             outputStream.reset();
         }
-
     }
 }
