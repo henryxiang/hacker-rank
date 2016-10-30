@@ -1,8 +1,11 @@
 package com.hackerRank.domain.java.intro;
 
+import com.hackerRank.domain.ProblemSolution;
+
 import java.util.Scanner;
 
-public class JavaIfElseProblem {
+public class JavaIfElseProblem implements ProblemSolution {
+    @Override
     public void solve() {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();

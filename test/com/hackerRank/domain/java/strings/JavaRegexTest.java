@@ -1,19 +1,17 @@
-package com.hackerRank.domain.tutorials.thirtyDaysOfCode;
-
+package com.hackerRank.domain.java.strings;
 
 import com.hackerRank.BasicTest;
 import org.junit.Test;
 
-public class Day00Test extends BasicTest {
+public class JavaRegexTest extends BasicTest {
     private static final String[] inputFiles = {"input1.txt"};
     private static final String[] outputFiles = {"output1.txt"};
 
     @Test
     public void test() throws Exception {
-        super.setProblemSolution(new Day00());
+        super.setProblemSolution(new JavaRegexProblem());
         super.setInputFiles(inputFiles);
         super.setOutputFiles(outputFiles);
         super.test();
     }
-
 }
