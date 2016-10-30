@@ -3,9 +3,9 @@ package com.hackerRank.domain.java.intro;
 import com.hackerRank.BasicTest;
 import org.junit.Test;
 
-public class JavaIfElesTest extends BasicTest {
-    private static final String[] inputFiles = {"input1.txt", "input2.txt"};
-    private static final String[] outputFiles = {"output1.txt", "output2.txt"};
+public class JavaIfElseTest extends BasicTest {
+    private static final String[] inputFiles = {"JavaIfElseTest-input1.txt", "JavaIfElseTest-input2.txt"};
+    private static final String[] outputFiles = {"JavaIfElseTest-output1.txt", "JavaIfElseTest-output2.txt"};
 
     @Test
     public void test() throws Exception {
