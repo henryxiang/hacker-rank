@@ -7,7 +7,6 @@ import java.util.*;
 public class DagQuery implements ProblemSolution {
 
     private Map<Integer, List<Integer>> graph = new HashMap<>();
-    //private boolean[] visited;
     private BitSet visited;
     private int[] values;
 
@@ -18,7 +17,6 @@ public class DagQuery implements ProblemSolution {
         int e = scanner.nextInt();
         int q = scanner.nextInt();
 
-        //visited = new boolean[v+1];
         visited = new BitSet(v+1);
         visited.clear();
         values = new int[v+1];
@@ -39,14 +37,12 @@ public class DagQuery implements ProblemSolution {
                 case 1:
                     a = scanner.nextInt();
                     b = scanner.nextInt();
-                    //Arrays.fill(visited, false);
                     visited.clear();
                     setAll(a, b, visited);
                     break;
                 case 2:
                     a = scanner.nextInt();
                     b = scanner.nextInt();
-                    //Arrays.fill(visited, false);
                     visited.clear();
                     setAllSmall(a, b, visited);
                     break;
@@ -65,7 +61,7 @@ public class DagQuery implements ProblemSolution {
 
         if (graph.containsKey(u)) {
             for (int n : graph.get(u)) {
-                if (visited.get(n)) setAll(n, s, visited);
+                if (!visited.get(n)) setAll(n, s, visited);
             }
         }
     }
@@ -76,7 +72,7 @@ public class DagQuery implements ProblemSolution {
 
         if (graph.containsKey(u)) {
             for (int n : graph.get(u)) {
-                if (visited.get(n)) setAllSmall(n, s, visited);
+                if (!visited.get(n)) setAllSmall(n, s, visited);
             }
         }
     }
