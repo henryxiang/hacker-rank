@@ -9,6 +9,7 @@ public class DagQuery implements ProblemSolution {
     private Map<Integer, List<Integer>> graph = new HashMap<>();
     private BitSet visited;
     private int[] values;
+    private Map<Integer, List<Integer>> memo = new HashMap<>();
 
     @Override
     public void solve() {
